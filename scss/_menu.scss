@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -42,7 +42,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  //   opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -65,7 +64,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.8);
+    background: rgba(darken($primary-color, 5), 0.7);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -76,7 +75,7 @@
     }
 
     .nav-item {
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(100%, 0, 0);
       @include easeOut;
 
       &.show {
@@ -96,7 +95,7 @@
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 300;
-      color: #fff;
+      color: set-text-color($primary-color);
       text-decoration: none;
       @include easeOut;
 
