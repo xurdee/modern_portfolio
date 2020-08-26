@@ -4,11 +4,14 @@
   "description": "Responsive Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "postinstall": "patch-package"
   },
   "author": "Aditya Chauhan",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.14.1"
-  }
+    "node-sass": "^4.14.1",
+    "patch-package": "^6.2.2"
+  },
+  "devDependencies": {}
 }
